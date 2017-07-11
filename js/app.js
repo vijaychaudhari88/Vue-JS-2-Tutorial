@@ -5,11 +5,11 @@ new Vue({
         score: 55
     },
     methods: {
-        add: function () {
-            this.score++
+        add: function (num) {
+            this.score += num;
         },
-        subtract: function () {
-            this.score--;
+        subtract: function (num) {
+            this.score -= num;
         }
     }
 });
