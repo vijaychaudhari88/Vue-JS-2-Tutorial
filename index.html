@@ -7,16 +7,12 @@
     <script src="js/vue@2.3.4.js"></script>
 </head>
 <body>
-    <h1>Vue.js Blog App</h1>
     <div id="vue-app">
-        <h1>{{ name }}</h1>
-        <p>Score of {{ name }} is {{ score }}</p>
-        <button @dblclick="add(10)">Score +10</button>
-        <button v-on:click.once="add(1)">Score +1</button>
-        <button @click="subtract(1)">Score -1</button>
-        <button v-on:dblclick="subtract(10)">Score -10</button>
-        <a v-on:click.prevent="click" href="https://www.google.co.in/" target="_blank">Google</a>
-        <div id="canvas" v-on:mousemove="updateXY">{{ x }}, {{ y }}</div>
+        <h1>Keyboard Events</h1>
+        <label for="">Name: </label>
+        <input type="text" v-on:keyup.enter="logName">
+        <label for="">Age: </label>
+        <input type="text" v-on:keyup.alt.enter="logAge">
     </div>
 
 

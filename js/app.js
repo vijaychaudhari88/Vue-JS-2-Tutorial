@@ -1,24 +1,14 @@
 new Vue({
     el: "#vue-app",
     data: {
-        name: "Vijay Chaudhari",
-        score: 55,
-        x: 0,
-        y: 0
+
     },
     methods: {
-        add: function (num) {
-            this.score += num;
+        logName: function (event) {
+            console.log(event.target.value);
         },
-        subtract: function (num) {
-            this.score -= num;
-        },
-        updateXY: function (events) {
-            this.x = events.offsetX;
-            this.y = events.offsetY;
-        },
-        click: function () {
-            alert("do you want to go somewhere else?");
+        logAge: function (event) {
+            console.log(event.target.value);
         }
     }
 });
