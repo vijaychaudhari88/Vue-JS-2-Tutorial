@@ -12,6 +12,9 @@
         <h1>{{ name }}</h1>
         <h2>{{ greet('afternoon') }}</h2>
         <p>Job: {{ job }}</p>
+        <a v-bind:href="website">Vue.js Guide</a>
+        <div v-html="websiteTag"></div>
+        <input type="text" v-bind:value="name">
     </div>
 
 
