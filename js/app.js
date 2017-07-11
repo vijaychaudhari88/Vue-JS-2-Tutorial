@@ -5,8 +5,11 @@ new Vue({
         score: 55
     },
     methods: {
-        greet: function (time) {
-            return "Good " + time + ", " + this.name;
+        add: function () {
+            this.score++
+        },
+        subtract: function () {
+            this.score--;
         }
     }
 });
