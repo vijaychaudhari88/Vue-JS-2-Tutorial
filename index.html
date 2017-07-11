@@ -11,14 +11,13 @@
     <div id="vue-app">
         <h1>{{ name }}</h1>
         <p>Score of {{ name }} is {{ score }}</p>
-        <button v-on:dblclick="add(10)">Score +10</button>
+        <button @dblclick="add(10)">Score +10</button>
         <button v-on:click="add(1)">Score +1</button>
-        <button v-on:click="subtract(1)">Score -1</button>
+        <button @click="subtract(1)">Score -1</button>
         <button v-on:dblclick="subtract(10)">Score -10</button>
+        <div id="canvas" v-on:mousemove="updateXY">{{ x }}, {{ y }}</div>
     </div>
-    <div id="canvas">
 
-    </div>
 
 
     <script src="js/app.js"></script>
