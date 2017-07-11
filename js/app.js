@@ -16,6 +16,9 @@ new Vue({
         updateXY: function (events) {
             this.x = events.offsetX;
             this.y = events.offsetY;
+        },
+        click: function () {
+            alert("do you want to go somewhere else?");
         }
     }
 });
