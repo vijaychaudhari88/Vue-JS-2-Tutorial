@@ -2,9 +2,7 @@ new Vue({
     el: "#vue-app",
     data: {
         name: "Vijay Chaudhari",
-        job: "Developer",
-        website: "https://vuejs.org/v2/guide/",
-        websiteTag: '<a href="https://vuejs.org/v2/guide/">Vue.js Guide</a>'
+        score: 55
     },
     methods: {
         greet: function (time) {

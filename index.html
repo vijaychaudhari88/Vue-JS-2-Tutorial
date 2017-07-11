@@ -10,11 +10,9 @@
     <h1>Vue.js Blog App</h1>
     <div id="vue-app">
         <h1>{{ name }}</h1>
-        <h2>{{ greet('afternoon') }}</h2>
-        <p>Job: {{ job }}</p>
-        <a v-bind:href="website">Vue.js Guide</a>
-        <div v-html="websiteTag"></div>
-        <input type="text" v-bind:value="name">
+        <p>Score of {{ name }} is {{ score }}</p>
+        <button v-on:click="score++">Score +1</button>
+        <button v-on:click="score++">Score -1</button>
     </div>
 
 
